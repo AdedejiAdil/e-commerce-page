@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: black;
+    font-family: 'Kumbh San', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 50px;
+}
+header{
+    padding: 15px 60px;
+    background-color: #E3E6F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 10px 1px black;
+    z-index: 99;
+}
+.hamburger-menu{
+    display: none;;
+}
+.menu-display{
+    position: absolute;
+    top: -200%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    font-size: 20px;
+    margin-left: 40px;
+}
+nav ul li:nth-child(2) a{
+    color:#088178 ;
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 22px;
+    left: 0;
+    background: transparent;
+    transition: all .3s;
+    position: relative;
+    z-index: 999;
+}
+nav ul li a:hover::after, li a::after{
+    width: 100%;
+    background-color:#088178 ;
+}
+header .bag{
+    width: 25px;
+    height: 25px;
+}
+header .bag img{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display:block;
+}
+.stay-banner{
+    background-image: url(banner/b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section.products{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+section.products .pro-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 80px;
+}
+.pro-cards .card{
+    width: 270px;
+    border: 2px solid rgba(0, 0, 0, 0.193);
+    box-shadow:1px 1px 5px 1px rgba(0, 0, 0, 0.101);
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.pro-cards .card:hover{
+    box-shadow:2px 2px 5px 2px rgba(0, 0, 0, 0.189);
+}
+.pro-cards .card .pro-img img{
+    width: 100%;
+    border-radius:15px ;
+}
+.pro-cards .card .text{
+    text-align: left;
+}
+.pro-cards .card .text ul{
+    display: flex;
+}
+.pro-cards .card .text ul li{
+    width: 16px; 
+}
+.pro-cards .card .text ul li img{
+    width: 100%;
+}
+.pro-cards .card .text ul:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro-cards .card .text ul:last-child h3{
+    color:green;
+    font-weight: 600;
+}
+.pro-cards .card .text ul:last-child img{
+    background-color:rgba(133, 218, 133, 0.25);
+    padding:5px;
+    border-radius: 50%;
+}
+.slide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.slider a{
+    color: white;
+    background-color: #088178;
+    padding:15px 20px;
+}
+section.sign-up{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    margin: 40px 0 0;
+    background-color: rgb(7, 7, 69);
+}
+section.sign-up .text h3{
+    font-size:2rem
+}
+section.sign-up .text p{
+    font-size:1.3rem
+}
+section.sign-up .text span{
+    color: orange;
+}
+section.sign-up form input.text{
+    border: none;
+    outline: none;
+    width: 22rem;
+    height: 3rem;
+    padding:0 20px;
+}
+section.sign-up form button{
+    position: relative;
+    border: none;
+    outline: none;
+    right: 3px;
+    color: white;
+    background-color: rgb(11, 135, 79);
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+}
+footer{
+    background-color: #E3E6F3;
+    padding:20px 60px;
+}
+footer .link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding:20px 0;
+}
+footer .link ul li{
+    line-height: 23px;
+}
+footer .link h3{
+    padding:10px 0;
+}
+footer .link .col1 .follow ul{
+    display: flex;
+}
+footer .link .col1 .follow ul li{
+    margin-right: 10px;
+}
+footer .link .col4 .store{
+    display: flex;
+    margin: 5px 0;
+}
+footer .link .col4 .store img{
+    border:1px solid rgba(0, 0, 0, 0.518);
+    margin-right: 10px;
+    border-radius: 5px;
+}
+footer .detail{
+    display: flex;
+    justify-content: center;
+}
+/* TABLET */
+
+@media screen and (max-width:768px) {
+    .hamburger-menu{
+        display: block;;
+        position:absolute;
+        right: 5%;
+    }
+    .menu-display{
+        background-color: #E3E6F3;
+        position:absolute;
+        top: 0;
+        right:0;
+        width: 300px;
+        height: 100vh;
+        padding: 35px;
+        box-shadow: 1px 1px 5px 1px black;
+        transition: 0.3s;
+        z-index: 999;
+    }
+     .menu-display .close-menu{
+        margin-bottom: 10px;
+     }
+     .menu-display ul li{
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    header .bag{
+        margin-right: 25px;
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width:425px) {
+    h1{
+        font-size:2.5rem
+    }
+     header{
+        padding: 10px;
+    }
+    header .bag{
+        margin-right: 40px;
+    }
+    section.sign-up{
+        padding:20px;
+    }
+    section.sign-up .text h3{
+        font-size:1.8rem;
+        margin-bottom: 10px;
+    }
+    section.sign-up .text p{
+        font-size:1rem
+    }
+    section.sign-up form input.text{
+        width: 13rem;
+        height: 2.4rem;
+    }
+    section.sign-up form button{
+        height: 2.5rem;
+    }
+    footer .link .col4 .store img{
+        width: 40%;
+    }
+}
